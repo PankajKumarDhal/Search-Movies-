@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for movies..." oninput="debounceSearch()">
+            <button class="btn reset-btn"><a href="./index.html">RESET</a></button>
+        </div>
+        <div id="results" class="results-grid"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <!-- Movie details will be injected here -->
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
